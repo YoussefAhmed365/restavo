@@ -397,6 +397,7 @@ function updateUserUI() {
     const authBtn = document.getElementById('auth-action-btn');
 
     if (currentUser) {
+<<<<<<< HEAD
         let displayName = currentUser.username;
         
         // 🌟🌟 التعديل هنا لإخفاء الإيميل 🌟🌟
@@ -415,6 +416,9 @@ function updateUserUI() {
         // 🌟🌟 نهاية التعديل 🌟🌟
 
         userDisplay.textContent = `مرحباً، ${displayName}`; // استخدام الاسم المُعدَّل
+=======
+        userDisplay.textContent = `مرحباً, ${currentUser.username}`;
+>>>>>>> 9511437366f56d930d337c1f1bfc2bc5bc9c77c2
         userDisplay.classList.remove('hidden');
         authBtn.innerHTML = `<i data-lucide="log-out" class="w-4 h-4"></i><span>تسجيل الخروج</span>`;
         authBtn.onclick = handleLogout;
@@ -425,6 +429,10 @@ function updateUserUI() {
     }
     lucide.createIcons();
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9511437366f56d930d337c1f1bfc2bc5bc9c77c2
 // ----------------------------------------------------------------------
 // 🌟 إصلاح: دالة مساعدة لتحديث زر المفضلة (كانت مفقودة)
 // ----------------------------------------------------------------------
