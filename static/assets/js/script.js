@@ -1054,4 +1054,8 @@ async function fetchAndRenderBookings() {
     } catch (error) {
         container.innerHTML = `<p class="text-center text-red-500 mt-10">${error.message}</p>`;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 9bd2d8d55bf9254d1298665f3a13d2fdb9312f0d

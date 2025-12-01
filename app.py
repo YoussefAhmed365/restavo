@@ -605,4 +605,8 @@ if __name__ == '__main__':
     # db_manager.create_tables() # 🌟 يتم استدعاؤها الآن في __init__
     print(">>> تشغيل الخادم على http://127.0.0.1:5000 <<<")
     print(">>> اضغط CTRL+C للإيقاف <<<")
+<<<<<<< HEAD
     app.run(debug=True, host='0.0.0.0', port=5000)
+=======
+    app.run(debug=True, host='0.0.0.0', port=5000)
+>>>>>>> 9bd2d8d55bf9254d1298665f3a13d2fdb9312f0d
