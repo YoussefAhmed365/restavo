@@ -1,0 +1,74 @@
+/* الخط المستخدم للغة العربية */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;400;700&display=swap');
+
+body {
+    font-family: 'Tajawal', sans-serif;
+    background-color: #fefef6;
+    /* لون خلفية ناعم */
+}
+
+/* الألوان المستخدمة: #59451b (بني داكن) */
+.brand-color {
+    background-color: #59451b;
+}
+
+.brand-text {
+    color: #59451b;
+}
+
+.icon-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 9999px;
+    color: #59451b;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.icon-link:hover {
+    background-color: #f0f0e8;
+}
+
+/* لتنسيق مؤشر التحميل في وضع الاتجاه من اليمين لليسار */
+.animate-bounce>div:nth-child(2) {
+    animation-delay: 150ms;
+}
+
+.animate-bounce>div:nth-child(3) {
+    animation-delay: 300ms;
+}
+
+#toast-message {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    color: white;
+    z-index: 2000;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+    transform: translateY(-20px) translateX(-50%);
+}
+
+/* تحسين: إضافة كود CSS الخاص بـ Toast (بديل alert) */
+#toast-message.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0) translateX(-50%);
+}
+
+#toast-message.success {
+    background-color: #28a745;
+    /* أخضر */
+}
+
+#toast-message.error {
+    background-color: #dc3545;
+    /* أحمر */
+}
